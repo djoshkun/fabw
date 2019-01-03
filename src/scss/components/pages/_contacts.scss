@@ -1,0 +1,154 @@
+.region-contact{
+	background-color: $blue;
+
+	.container-mid{
+		@include padding(l, top bottom);
+		text-align: center;
+
+		.contact-header{
+
+			&__title{
+				font-size: 36px;
+				margin:0;
+				color: $white;
+
+				@include bp(s){
+					font-size: 25px;
+				}
+			}
+
+			&__text{
+				font-size: 20px;
+				color: $white;
+				margin: 0 0 20px 0;
+			}
+		}
+
+		.form{
+		    max-width: 680px;
+		    margin: auto;
+		    box-sizing: border-box;
+		    width: 100%;
+		    padding-left: 10px;
+		    padding-right: 10px;
+		    border-radius: 3px;
+
+			&__icon{
+				@include font-awesome('f107'){
+					margin-right: -13px;
+    				font-size: 31px;
+				}
+			
+			    width: 50px;
+			    height: 50px;
+			    border-radius: 100%;
+			    color: $white;
+			    font-size: 44px;
+			    font-weight: bold;
+			    text-align: center;
+			    line-height: 45px;
+			    border: 2px solid white;
+			    transition: 0.3s;
+			    margin: auto;
+			}
+
+			&__second__icon{
+			    background:  url(../images/tri.png)  no-repeat center center;  
+			    height: 32px;
+			    width: 75px;
+			    color: $white;
+			    font-size: 90px;
+			    font-weight: bold;
+			    text-align: center;
+			  	line-height: 0.1;
+			    margin: auto;
+			    margin-top: 30px;
+			    margin-bottom: -1px;
+			}
+
+			&__content{
+				position: relative;
+				background-color: $white;
+			    margin: auto;
+			    @include padding(l, top bottom);
+
+			    &__close{
+				    outline: none;
+				    background-color: $main;
+				    color: $white;
+		    	    position: absolute;
+				    top: -20px;
+				    right: -20px;
+				    width: 45px;
+				    height: 45px;
+				    border: none;
+				    border-radius: 100%;
+				    border:2px solid;
+
+				    @include bp(s){
+						top: -15px;
+					    right: -12px;
+					    width: 35px;
+					    height: 35px;
+					}
+
+				    @include bp(xs){
+						top: -14px;
+					    right: -10px;
+					    width: 30px;
+					    height: 30px;
+					    font-size: 14px;
+					}
+			    }
+				
+				&__input{
+				    box-sizing: border-box;
+					display: block;
+					margin: auto;
+					margin-bottom:10px;
+					width: 65%;
+				    padding: 15px 50px 15px 25px;
+					border-radius: 5px;
+				    border: 1px solid #e5e5e5;
+
+				    &:hover{
+					    box-shadow: 0px 0px 5px $blue;
+				    	transition: 0.2s all; 
+					}  
+
+					@include bp(s){
+						width: 90%;
+					}
+				}
+
+				&__info{
+					width: 80%;
+				    margin: auto;
+				    @include margin(m, bottom);
+					font-size: 15px;
+				    color: $dark-grey;
+
+				    @include bp(s){
+						width: 90%;
+					}
+				}
+
+				&__button{
+					display: inline-block;
+				    max-width: 170px;
+				    width: 100%;
+				    background: #ab1010;
+				    padding-bottom: 12px;
+				    padding-top: 12px;
+				    text-align: center;
+				    border-radius: 5px;
+				    text-decoration: none;
+				    font-weight: bold;
+				    color: #fff;
+				    border:none;
+				    @include margin(m, top);
+				}
+			}
+		}
+	}
+}

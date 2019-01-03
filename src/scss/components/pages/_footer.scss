@@ -1,0 +1,139 @@
+//Display:none default Drupal 8 theme output
+main{
+	.layout-content{
+		//display: none;
+	}
+}
+
+//footer
+.region-footer{
+	background-color: $dark-grey;
+
+	.container-mid{
+		@include padding(l, top bottom);
+		text-align: center;
+
+		.footer-content{
+		    max-width: 680px;
+		    margin: auto;
+		    box-sizing: border-box;
+		    width: 100%;
+		    padding-left: 10px;
+		    padding-right: 10px;
+
+		    &__title{
+		    	color: $white;
+		    	margin: 0;
+		    	@include margin(m, bottom);
+		    }
+
+		    &__info{
+		    	color: $footer-grey-mid;
+		    	@include margin(m, top bottom);
+		    }
+
+		    &__input{
+			    border:none;
+			    outline: none;
+		    	background-color: $footer-grey;
+		    	color: $footer-grey-mid;
+			    box-sizing: border-box;
+				display: block;
+				width: 100%;
+				margin: auto;
+				margin-bottom:10px;
+			    padding: 15px 50px 15px 25px;
+
+			    &:hover{
+				    box-shadow: 0px 0px 5px $blue;
+			    	transition: 0.2s all; 
+				}  
+			}
+
+			&__button{
+				outline: none;
+			    border:2px solid $footer-grey-mid;
+			    background: $dark-grey;
+			    color: $white;
+				display: inline-block;
+			    max-width: 170px;
+			    width: 100%;
+			    padding-bottom: 12px;
+			    padding-top: 12px;
+			    text-align: center;
+			    border-radius: 5px;
+			    text-decoration: none;
+			    font-weight: bold;
+			    @include margin(m, top);
+
+			    &:hover{
+				    border: 2px solid $main;
+			    	transition: 0.2s all; 
+				}
+			}
+
+		    .social{
+		    	border:2px solid $footer-grey-mid;
+		    	color: $white;
+		    	display: inline-block;
+		    	box-sizing:border-box;
+		    	height: 45px;
+		    	width: 45px;
+		    	@include font-awesome('f107');
+		    	font-size: 22px;
+		    	padding: 10px;
+		    	line-height: 0.8;
+		    	border-radius: 3px;
+		    	@include margin(xs, left right);
+
+		    	&:hover{
+				    border: 2px solid $main;
+			    	transition: 0.2s all; 
+				} 
+
+				&--fb{
+			    	@include font-awesome('f09a'); 
+			    }
+
+			    &--tw{
+			    	@include font-awesome('f099');
+			    }
+
+			    &--g{
+			    	@include font-awesome('f0d5');
+			    }
+
+			    &--in{
+			    	@include font-awesome('f0e1');
+			    }
+		    }
+		}
+	}
+}
+
+//Second Footer
+.region-second-footer{
+	background-color: $footer-grey;
+
+	.container-mid{
+		padding-left: 0;
+		padding-right: 0;
+
+		.copyright{
+			color: $footer-grey-mid;
+			width: 325px;
+			margin: auto;
+			padding-top:20px;
+			padding-bottom: 20px;
+			text-align: center;
+			font-size: 15px;
+			@include bp(xs){
+				font-size: 14px;
+			}
+
+			.copy-icon{
+				@include font-awesome('f1f9');
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+//Partials
+@import "partials/variables";
+
+//Helpers
+@import "helpers/mixins";
+
+//Components
+@import "components/misc";
+
+//Elements
+//@import "components/elements/test";
+
+
+// Pages
+@import "components/pages/header";
+@import "components/pages/highlighted";
+@import "components/pages/about-us";
+@import "components/pages/our-approch";
+@import "components/pages/our-work";
+@import "components/pages/contacts";
+@import "components/pages/footer";

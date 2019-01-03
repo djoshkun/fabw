@@ -1,0 +1,9 @@
+.container-mid{
+	@include container;
+
+	@include bp(l){
+		box-sizing: border-box;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}

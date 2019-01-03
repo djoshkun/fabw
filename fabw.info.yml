@@ -1,0 +1,21 @@
+name: Free Agency Business Website
+type: theme
+base theme: classy
+description: Free Agency Business Website is Responsive, One Page Drupal 8 Theme.
+core: 8.x
+regions:
+  header: Header
+  secondary_menu: 'Secondary menu'
+  highlighted: Highlighted
+  page_top: 'Page Top'
+  about_us: 'About Us'
+  our_approch: 'Our Approch'
+  our_work: 'Our Work'
+  contact: 'Contact'
+  page_bottom: 'Page Bottom'
+  footer: Footer
+  second_footer: 'Second Footer'
+libraries:
+  - fabw/global-styling
+  - fabw/google-font
+  - fabw/global-scripts

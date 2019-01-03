@@ -1,0 +1,290 @@
+//Secondary Menu
+.region-secondary-menu{
+	background-color: $grey;
+	border-bottom: 1px solid  $border;
+
+	.top-header{
+        color: $dark-grey;
+		text-align: right;
+        font-size: 15px;
+        font-weight: 500;
+
+        @include bp(xs){
+			font-size: 13px;
+		}
+
+		&__tel{
+			display: inline-block;;
+			padding-right: 20px;
+			@include font-awesome('f10b'){
+				margin-right: 12px;
+				font-size: 22px;
+				vertical-align: middle;
+			}
+
+			@include bp(xs){
+				padding-right: 5px;
+			}
+		}
+
+		&__info{
+			border-left: 1px solid $border;
+			display: inline-block;
+			height: 30px;
+			line-height: 0.7;
+			@include padding(xs, top);
+			padding-left: 20px;
+			@include font-awesome('f0e0'){
+				margin-right: 12px;
+				font-size: 20px;
+				vertical-align: middle;
+			}
+
+			@include bp(xs){
+				padding-left: 10px;
+			}
+		}
+
+		&__fb{
+			display: inline-block;
+			padding-left: 10px;
+			@include font-awesome('f082'){
+				color: $blue;
+				font-size: 26px;
+				vertical-align: middle;
+			}
+		}
+	}
+}
+
+//Header
+.region-header{
+	background-color: $white;
+	border-bottom: 1px solid  $border;
+	@include padding(m,top bottom);
+
+	.contextual-region{
+		position: static;
+	}
+	
+	.container-mid{
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: space-between;
+	    align-items:center;
+	    position: relative;
+
+		.block-system-branding-block{
+			@include padding(xs, top);
+	   		display: inline-block;
+			width: 245px;
+		}
+
+		.block-menu.navigation.menu--main{
+			display: inline-block;
+
+			.menu{
+				margin: 0;
+
+				&-item {
+				    float: left;
+				    margin-right: 20px;
+
+					.is-active{
+						text-decoration: none;
+						font-weight: bold;
+					    text-decoration: none;
+
+						 &:hover {
+					        color: $main;
+					    	transition: 0.2s all;
+					    }  
+					}
+				}
+			}
+		}
+
+		#block-headersecondarynavigation{
+			flex-grow:1;
+
+			.secondary-navigation{
+				display: flex;
+				flex-wrap:wrap;
+   				justify-content: flex-end;
+   				align-items:center;
+
+   				@include bp(s){
+			    	justify-content: flex-start;
+			    }
+
+				.menu{
+					margin: 0;
+					list-style-type: disc;
+					display: flex;
+				    flex-wrap: wrap;
+				    align-items: center;
+				    @include bp(m){
+				    	display: none;
+				    	width: 100%;
+				    }
+
+					&__item {
+					    float: left;
+					    list-style-position: inside;
+					    list-style-type: disc;
+					    margin-right: 20px;
+					    @include bp(m){
+					    	display: block;
+						    width: 100%;
+						    margin-right: 85px;
+						    padding-top: 10px;
+						    padding-bottom: 10px;
+						} 
+					    
+					    &:first-child {
+							list-style-type: none;
+							@include bp(m){
+								border-top: 1px solid $dark-grey;
+							}
+						}
+
+						&:last-child {
+							list-style-type: none;
+							margin-right: 0px;
+						}
+
+						&__link{
+							text-decoration: none;
+							font-weight: bold;
+							color: $black;
+						    text-decoration: none;
+
+							&:hover {
+						        color: $main;
+						   		transition: 0.2s all;
+						    }  
+						}
+					}
+
+					.free-consultation{
+						display: inline-block;
+					    max-width: 170px;
+					    width: 100%;
+					    background: $main;
+					    box-sizing:border-box;
+					    padding-bottom: 12px;
+					    padding-right: 12px;
+					    padding-left: 12px;
+					    padding-top: 12px;
+					    text-align: center;
+					    border-radius: 5px;
+					    text-decoration: none;
+					    font-weight: bold;
+					    color: $white;
+					    font-size: 14px;
+					}
+				}
+			}
+		}
+
+		.navigation.menu--account{
+			display: inline-block;
+			margin-left:20px;
+
+			.menu{
+				margin: 0;
+				text-align: end;
+
+				& a{
+					color: $black;
+					text-decoration: none;
+					font-weight: bold;
+				    text-decoration: none;
+
+					 &:hover {
+				        color: $main;
+				    	transition: 0.2s all;
+				    }  
+				}
+			}
+		}
+	}
+}
+
+//FIXED MENU ON TOP - css
+ // this make our menu fixed top 
+.fix-nav {
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+  
+// this will adjust body top margin to prevent content jumping when nav gets fix    
+.fix-body {
+	margin-top: 50px;
+}
+
+//Burgen Menu
+.burger-menu {
+	display: none;
+	float: right;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	position: absolute;
+	top: 25px;
+	right: 0;
+	margin-right: 0;
+
+	@include bp(m){
+		display: inline-block;
+	}
+
+}
+.burger {
+	position: absolute;
+	background: $dark-grey;
+	width: 25px;
+	height: 3px;
+	right: 10px;
+	opacity: 1;
+}
+.burger::before {
+	position: absolute;
+	background: $dark-grey;
+	width: 25px;
+	height: 3px;
+	top: 10px;
+	content: "";
+	display: block;
+}
+
+.burger::after {
+	position: absolute;
+	background: $dark-grey;
+	width: 25px;
+	height: 3px;
+	bottom: 10px;
+	content: "";
+	display: block;
+}
+
+.burger::after, .burger::before, .burger {
+	transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+}
+.burger-menu.menu-on .burger::after{
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	bottom: 0px;
+}
+.burger-menu.menu-on .burger::before{
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	top: 0px;
+}
+.burger-menu.menu-on .burger{
+ 	background: rgba(111,111,111,.0);
+}

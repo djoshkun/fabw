@@ -1,0 +1,133 @@
+.region-our-approch{
+	background-color: $grey-mid;
+
+	.container-mid{
+		@include padding(l, top bottom);
+		text-align: center;
+
+		.approch-header{
+
+			&__title{
+				margin:0;
+				color:$dark-grey;
+			}
+
+			&__text{
+				font-size:20px;
+				color:grey;
+				margin: 0;
+			}
+			& hr{
+				height: 5px;
+				background-color: $dark-grey;
+				 @include margin(m,bottom);
+			}
+		}
+
+		.approch-content{
+
+			@include bp(s){
+				width: 400px;
+				margin: auto;
+			}
+			@include bp(xs){
+				width: 300px;
+			}
+
+			.approch-content__item{
+			    display: flex;
+			    flex-wrap:wrap;
+			    justify-content: flex-start;
+			    align-items: center;
+			    margin-bottom: 30px;
+			    box-shadow: 1px 1px 7px  lightgrey;
+	  			border-radius: 5px; 
+	  			height: 265px;
+	  			padding-left: 330px;
+
+	  			@include bp(s){
+	  				flex-direction:column;
+	  				width: 100%;
+	  				padding-left: 0px;
+	  				padding-top: 210px;
+	  			}
+
+	  			@include bp(xs){
+	  				padding-top: 155px;
+	  			}
+
+	  			&:nth-child(even) {
+	  				flex-direction: row-reverse;
+	  				padding-left: 0;
+	  				padding-right: 345px;
+	  				background-position: right center;
+	  				.approch-content__item__text{
+						text-align: right ;
+
+						@include bp(s){
+							text-align: center;
+			  			}
+					} 
+
+					@include bp(s){
+						flex-direction:column;
+						background-position: top center;
+		  				padding-right: 0;
+		  			}
+	  			}
+
+	  			&__number{
+	  				background-color:  $main;
+	  				border-radius: 5px;
+	  				border: 2px solid white;
+				    color: white;
+				    font-size: 23px;
+				    display: flex;
+				    flex-direction: column;
+				    flex-wrap:wrap;
+				    justify-content: center;
+				    padding: 20px 30px;
+
+				    @include bp(xs){
+				    	font-size: 15px;
+				    }
+
+	  				& h1{
+	  					margin: 0;
+	  					line-height: 0.8;
+	  				}
+
+	  				& p{
+	  					margin: 0;
+	  				}
+	  			}
+
+	  			&__text{
+	  				width: 54%;
+	  				text-align: left;
+	  				margin-right: 35px;
+	  				margin-left: 35px;
+
+	  				@include bp(s){
+	  					width: 90%;
+	  					text-align: center;
+	  					@include margin(xs, top bottom left right);
+	  				}
+
+	  				h3{
+	  					margin: 0;
+	  				}
+
+	  				p{
+	  					margin-bottom: 0;
+	  					font-size:15px;
+
+	  					@include bp(xs){
+		  					font-size: 14px;
+		  				}
+	  				}
+	  			}	
+			}
+		}
+	}
+}

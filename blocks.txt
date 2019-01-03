@@ -1,0 +1,215 @@
+//header top
+<div class="top-header"><span class="top-header__tel">6337 3128</span> <span class="top-header__info">info@bussines.co</span> <span class="top-header__fb"> </span></div>
+
+//Header Secondary Navigation
+<div class="burger-menu">
+<div class="burger">&nbsp;</div>
+</div>
+
+<div class="secondary-navigation">
+<ul class="menu">
+	<li class="menu__item"><a class="menu__item__link" href="#highlighted">Home</a></li>
+	<li class="menu__item"><a class="menu__item__link" href="#about_us">About us</a></li>
+	<li class="menu__item"><a class="menu__item__link" href="#our_approch">Our Approch</a></li>
+	<li class="menu__item"><a class="menu__item__link" href="#our_work">Our Work</a></li>
+	<li class="menu__item"><a class="free-consultation" href="#contact">Free Consultation</a></li>
+</ul>
+</div>
+
+//Highlighted Content
+<div class="provider" id="provider">
+<h1 class="provider__title">We Providing</h1>
+
+<p class="provider__text">Social Media marketing for businesses</p>
+<a class="provider__link" href="#">FREE CONSULTATION</a></div>
+
+
+//About us Title
+<div class="au-header" id="au-header">
+<h1 class="au-header__title">About Us</h1>
+<p class="au-header__text">We are added our major Services</p>
+<hr width="5%" /></div>
+
+//About Us Content
+<div class="au-content">
+<div class="au-content__item">
+<div><img alt="book" class="au-content__item__img" src="/themes/fabw/assets/images/icon-like.png" /></div>
+
+<h2 class="au-content__item__title">Facebook Marketing</h2>
+
+<p class="au-content__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+</div>
+
+<div class="au-content__item">
+<div><img alt="like" class="au-content__item__img" src="/themes/fabw/assets/images/iceon-book.png" /></div>
+
+<h2 class="au-content__item__title">landing pages Creation</h2>
+
+<p class="au-content__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+</div>
+
+<div class="au-content__item">
+<div><img alt="window" class="au-content__item__img" src="/themes/fabw/assets/images/icon-window.png" /></div>
+
+<h2 class="au-content__item__title">Ads management</h2>
+
+<p class="au-content__item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+</div>
+</div>
+
+
+//Our Approch Title
+<div class="approch-header">
+<h1 class="approch-header__title">Our Approch</h1>
+
+<p class="approch-header__text">Check Our approches step by step (how we do it)</p>
+
+<hr width="5%" /></div>
+
+//Our Approch Content
+
+<div class="approch-content">
+<div class="approch-content__item" style="background:#fff url(/themes/fabw/assets/images/one.png) no-repeat; background-size: contain;">
+<div class="approch-content__item__number">
+<h1>1</h1>
+
+<p>step</p>
+</div>
+
+<div class="approch-content__item__text">
+<h3>Step 1:Heading Here</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+</div>
+</div>
+
+<div class="approch-content__item" style="background-image: url(/themes/fabw/assets/images/two.png); background-color: white; background-size: contain;  background-repeat: no-repeat;">
+<div class="approch-content__item__number">
+<h1>2</h1>
+
+<p>step</p>
+</div>
+
+<div class="approch-content__item__text">
+<h3>Step 2:Heading Here</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+</div>
+</div>
+
+<div class="approch-content__item" style="background:#fff url(/themes/fabw/assets/images/three.png) no-repeat; background-size: contain;">
+<div class="approch-content__item__number">
+<h1>3</h1>
+
+<p>step</p>
+</div>
+
+<div class="approch-content__item__text">
+<h3>Step 3:Heading Here</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+</div>
+</div>
+
+<div class="approch-content__item" style="background-image: url(/themes/fabw/assets/images/four.png); background-color: white; background-size: contain;  background-repeat: no-repeat;">
+<div class="approch-content__item__number">
+<h1>4</h1>
+
+<p>step</p>
+</div>
+
+<div class="approch-content__item__text">
+<h3>Step 4:Heading Here</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+</div>
+</div>
+</div>
+
+//Our Work Title
+<div class="work-header">
+<h1 class="work-header__title">Our Work</h1>
+
+<p class="work-header__text">We are added our featured works below</p>
+
+<hr width="5%" /></div>
+
+
+//Our Work Content
+<div class="our-work">
+<div class="project-name">
+<div><img alt="arrow" src="themes/fabw/assets/images/arrow.png" /></div>
+
+<h2>Project Name</h2>
+
+<p>Facebook marketing</p>
+</div>
+
+<div class="img-wrapper"><img alt="arrow" src="themes/fabw/assets/images/photo-1.png" /></div>
+
+<div class="project-name">
+<div><img alt="arrow" src="themes/fabw/assets/images/arrow.png" /></div>
+
+<h2>Project Name</h2>
+
+<p>Facebook marketing</p>
+</div>
+
+<div class="img-wrapper"><img alt="arrow" src="themes/fabw/assets/images/photo-2.png" /></div>
+
+<div class="img-wrapper"><img alt="arrow" src="themes/fabw/assets/images/photo-3.png" /></div>
+
+<div class="project-name">
+<div><img alt="arrow" src="themes/fabw/assets/images/arrow.png" /></div>
+
+<h2>Project Name</h2>
+
+<p>Facebook marketing</p>
+</div>
+
+<div class="img-wrapper"><img alt="arrow" src="themes/fabw/assets/images/photo-4.png" /></div>
+
+<div class="project-name">
+<div><img alt="arrow" src="themes/fabw/assets/images/arrow.png" /></div>
+
+<h2>Project Name</h2>
+
+<p>Facebook marketing</p>
+</div>
+</div>
+
+
+//Contact Title
+<div class="contact-header">
+<h1 class="contact-header__title">Get Your Free Facebook Analysis Now</h1>
+
+<p class="contact-header__text">Enter your details below</p>
+</div>
+
+//Contact Form
+<div class="form">
+<div class="form__icon">&nbsp;</div>
+
+<div class="form__second__icon">&nbsp;</div>
+
+<div class="form__content"><button class="form__content__close">X</button>
+
+<p class="form__content__info">Sit down with our experts to receive a free customized marketing plan for your business + Learn How Use Google and Facebook to get 5000% ROI or more</p>
+<input class="form__content__input" name="name" placeholder="Your Name" type="text" /> <input class="form__content__input" name="number" placeholder="Contact Number" type="text" /> <input class="form__content__input" name="company" placeholder="Company Name" type="text" /><button class="form__content__button" type="submit">SUBMIT NOW</button></div>
+</div>
+
+//Footer Content
+<div class="footer-content">
+<h1 class="footer-content__title">Get in touch</h1>
+
+<p class="footer-content__info">Subscribe to our newsletter to stay update with what is new</p>
+<input class="footer-content__input" name="email" placeholder="Email Address" type="text" /><button class="footer-content__button" type="submit">Subscribe</button></div>
+
+//Second Footer Text
+<div class="copyright">Cssauthor.com <span class="copy-icon"> 2014 All Rights Reserved</span></div>
+
+
+
+
+
+
